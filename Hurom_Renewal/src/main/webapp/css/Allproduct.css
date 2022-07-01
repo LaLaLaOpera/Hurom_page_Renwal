@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 사이드네비바, 중앙 */
+.box2{
+    display: flex;
+	justify-content: space-around;
+    margin-bottom: 40px;
+
+    position: relative;
+}
+
+.side{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 200px;
+    
+}
+
+/* 네비바 */
+.side ul{
+    margin: 0;
+    /* padding: 0; */
+    width: 150px;
+    overflow: auto;
+
+    background-color: rgb(241, 220, 191);
+}
+
+.side li a{
+    color: rgb(181, 181, 181);
+    font-weight: bold;
+}
+
+.side .active{
+    color: #555;
+    font-weight: 700;
+}
+
+.side li a:hover:not(.active) {
+    color: #222;
+}
+
+/* 상품이미지(중앙) */
+.row{
+    width: 900px;
+    /* margin: 0 19%; */
+    /* margin: 0 360px; */
+    margin: 0 auto;
+    text-align: center;
+
+    /* background-color: aqua; */
+}
+
+.card{
+    width: auto;
+    /* overflow: hidden; */
+    border-style: none;
+    position: relative;
+}
+
+.card .test{
+    /* overflow: hidden; */
+}
+.test .hi{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    box-sizing: border-box; /* border padding width 합쳐서 박스 크기 맞춰주기 */
+    transition: bottom 0.5s;
+
+}
+.test img:hover .hi{
+    bottom: 60px;
+}
+
+/* .card:hover img{
+    transform: scale(1.1);
+    transition: transform 0.8s;
+} */
+
+h5{
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(21, 20, 20);
+}
+
+/* 상품 색상표 */
+.card span{
+    display: inline-block;
+    width: 13px;
+    height: 4px;
+    border: 1px solid rgb(176, 173, 173);
+}
+
+
